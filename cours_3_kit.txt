@@ -1,0 +1,46 @@
+# Cours numéro 3 de Charles
+
+Parallèliser = multiprocesser les opérations
+--> regarder la page de mutiprocessing : https://docs.python.org/2/library/multiprocessing.html
+A lire (https://www.techlila.com/cores-vs-threads/)
+
+OpenCl permet de programmer sur carte graphique
+
+Remarque importante : utiliser PEP-8
+
+Cours sur l'API:
+API pour Application Programming Interface
+
+IFTTT (site: https://ifttt.com/)
+permet de créer des recipies, créer des ponts entre applications (connecter les API entre elles)
+
+l'API est une url (developper.twitter.com/en/....) renvoie un format json
+json format de notation, dictionnaire python (clef valeur)
+
+Dans certains html (ceux où il faut se connecter), il y a dans le header du site le login et le password
+digest authentification : autre manière de crypter
+OAauth --> permet à une application de se connecter sans avoir à donner le login et pwd (un peu comme facebook quand on autorise un ami à accéder à sa page personnelle)
+
+Première chose : existe t-il une API pour récuperer la donnée ?
+exposer la base de donnée de manière controlée
+
+Introduction à Pandas:
+Si on utilise Pandas, on n'utilise pas Numpy (mettre Python au niveau de R)
+
+-->Comment manipuler et stocker la donnée
+permet de créer des datastructures (series, dataframe, et panel)
+sqllite --> on peut utiliser les memes requetes que sur SQL (stocké sur un fichier)
+
+communes_data = pd.read_excel('fichier.xls', sheetname ='2014')
+header ou skiprows = pour dégager les entetes
+df.describe() --> pour avoir des infos stats sur les colonnes
+enregistrer un df dans un nouveau fichier --> to_csv('ain.csv', encoding='utf8')
+
+
+
+
+
+
+
+
+
