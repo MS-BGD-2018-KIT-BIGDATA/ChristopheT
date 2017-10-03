@@ -15,4 +15,4 @@ for pseudo in noms:
 big_contrib = pseudo.text[0:255]
 print(big_contrib)
 
-## -->
+## --> recuperer le nombre moyen de stars par repos et par utilisateur
