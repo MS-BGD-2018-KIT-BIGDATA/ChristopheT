@@ -19,5 +19,6 @@ big_contrib = pseudo.text[0:255]
 ## --> recuperer le nombre moyen de stars par repos et par utilisateur
 ## via API github
 import requests
-r = requests.get(url='https://api.github.com/user/akrabat.json')
+r = requests.get(url='https://api.github.com/users/GrahamCampbell/repos')
 print(r.json())
+## Determiner le count du nombre d'étoiles pour la clef 'stargazers_count'
