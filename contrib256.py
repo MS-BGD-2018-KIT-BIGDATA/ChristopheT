@@ -3,6 +3,7 @@
 
 import requests
 from bs4 import BeautifulSoup
+import json
 
 ## debut
 page_git = requests.get('https://gist.github.com/paulmillr/2657075')
@@ -13,6 +14,10 @@ for pseudo in noms:
 
 ## --> on selectionne uniquement les 256 plus gros contributeurs
 big_contrib = pseudo.text[0:255]
-print(big_contrib)
+#print(big_contrib) --> liste des 256 utilisateurs
 
 ## --> recuperer le nombre moyen de stars par repos et par utilisateur
+## via API github
+import requests
+r = requests.get(url='https://api.github.com/user/akrabat.json')
+print(r.json())
