@@ -2,6 +2,7 @@
 ## https://developer.github.com/v3/ (pour info, API github)
 
 import requests
+import numpy as np
 from bs4 import BeautifulSoup
 import json
 
@@ -14,11 +15,18 @@ for pseudo in noms:
 
 ## --> on selectionne uniquement les 256 plus gros contributeurs
 big_contrib = pseudo.text[0:255]
-#print(big_contrib) --> liste des 256 utilisateurs
 
 ## --> recuperer le nombre moyen de stars par repos et par utilisateur
 ## via API github
-import requests
-r = requests.get(url='https://api.github.com/users/GrahamCampbell/repos')
-print(r.json())
-## Determiner le count du nombre d'étoiles pour la clef 'stargazers_count'
+
+r = requests.get(url='https://api.github.com/users/GrahamCampbell/repos') # Test sur le premier de la liste
+data = r.json()
+count = []
+for i in range(0, len(data)):
+    count.append(data[i]['stargazers_count'])
+print(np.mean(count))
+
+## Boucle for pour avoir les moyennes de 256 contributeurs
+data = []
+for noms in big_contrib:
+    data = data.append(requests.get(url='https://api.github.com/users/' + str(big_contrib[noms]) + '/repos').json())
