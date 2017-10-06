@@ -13,11 +13,11 @@ noms = soup.find('table', attrs = {'cellspacing' : '0'}).find_all('a')
 for pseudo in noms:
     print(pseudo.text) ## liste de tous les contributeurs
 
-## --> on selectionne uniquement les 256 plus gros contributeurs
+
 big_contrib = pseudo.text[0:255]
 
 ## --> recuperer le nombre moyen de stars par repos et par utilisateur
-## via API github
+
 
 r = requests.get(url='https://api.github.com/users/GrahamCampbell/repos') # Test sur le premier de la liste
 data = r.json()
