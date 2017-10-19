@@ -1,0 +1,16 @@
+#4 COURS n°4 KIT BIG_DATA
+
+REGEX
+
+chercher la cheatsheet de la regex : expression régulière (objet abstrait) (forcer par exemple sur un mot de passe qu'il y ait une majuscule, etc.)
+csv.split(',') = séparer une chaine de caractères sur la virgule
+fonction map(lambda....) : C'est quoi "lambda" ?
+--> etre beaucoup plus tolérant via des phrases il faut importer le module re cre = re.compile(r'') par exemple chercher dans une chaine de caractère un numéro de carte bleue Voir les commandes regex site web = regex101
+fonction cred ? (regex)
+faire des groupes ?
+regex.sub remplacer quelque chose par autre chose (remplacer un mot de passe par exemple par des XXX) ([a-zA-Z0-9]+) = tester ce que ça veut dire
+regex email : r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$)"
+Une fois qu'on a une liste de string par exemple, on peut utiliser Pandas --> objet Pandas avec index
+extract(pattern) : on sépare tous les champs
+Cleaning avec la fonction dropna (on enlève ce qui ne va pas)
+avoir les trucs uniques des traces (dans l'exemple des alergènes) : traces_iter
