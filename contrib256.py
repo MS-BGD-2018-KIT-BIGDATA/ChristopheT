@@ -1,12 +1,12 @@
-##recuperer les 256 plus gros contributeurs sur la page github: (https://gist.github.com/paulmillr/2657075)
-## https://developer.github.com/v3/ (pour info, API github)
+# recuperer les 256 plus gros contributeurs sur la page github: (https://gist.github.com/paulmillr/2657075)
+# https://developer.github.com/v3/ (pour info, API github)
 
 import requests
 import numpy as np
 from bs4 import BeautifulSoup
 import json
 
-## debut
+# debut
 page_git = requests.get('https://gist.github.com/paulmillr/2657075')
 soup = BeautifulSoup(page_git.content, 'html.parser')
 noms = soup.find('table', attrs = {'cellspacing' : '0'}).find_all('a')
