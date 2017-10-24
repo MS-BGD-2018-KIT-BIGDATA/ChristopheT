@@ -1,0 +1,15 @@
+KitBig Data
+
+fonction pivot (wide et long) de pandas
+utilisation de read_csv et notamment de skiprows --> .head()
+skiprows[1] à regarder 
+fonction to_numeric avec en option errors = 'coerce'
+
+pour récupérer juste le nom de la marque, il passe par une fonction 'lambda' et .split()
+et utilisation de la fonction groupby pour regrouper par marque
+
+utilisation de la fonction .agg() pour rajouter par exemple d'autres colonnes contenant d'autres infos
+utilisation de la fonction .transform
+utilisation de la fonction .apply()
+
+
